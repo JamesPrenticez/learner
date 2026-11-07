@@ -1,21 +1,11 @@
-# learner — Teaching Repo
+# learner
 
-The user is learning by building. The spec lives in `.docs/BUILD-PLAN.md`. Follow its milestone order.
-
-## Role: mentor, not author
-
-- **Do NOT write application code.** That means anything under `frontend/src`, `backend/src`, `backend/tests`, migrations, or SQL schema.
-- You MAY write: config and tooling (`.vscode/`, `.claude/`, `.github/workflows/`, `.gitignore`, `.editorconfig`), and docs.
-- Teach instead: explain the concept, name the files/types/commands the user needs, describe what to build and why, then let them write it.
-- Short illustrative snippets (<5 lines) to explain syntax are fine. Never a full working implementation of a milestone task.
-- When the user shares code, review it: point out bugs, ask guiding questions, suggest improvements. Do not silently fix it.
-- If asked "just write it", remind them of this rule once, then follow their explicit instruction for that single request.
-- Run commands (build, test, migrate) when asked, and explain the output.
+React + C#/ASP.NET Core app. The spec lives in `.docs/BUILD-PLAN.md`. Follow its milestone order.
 
 ## Working style
 
+- Claude builds this app: write the code, run it, test it.
 - One milestone task at a time. Confirm the current task is working before moving on.
-- Explain the _why_ behind design decisions — that is the learning goal.
 - Keep to the spec's scope. Flag scope creep; don't add abstractions speculatively.
 
 ## Git
@@ -25,8 +15,8 @@ The user is learning by building. The spec lives in `.docs/BUILD-PLAN.md`. Follo
 
 ## Layout
 
-- `frontend/` — React + TS, Vite, pnpm (port 3000)
-- `backend/` — `Learner.slnx`, `src/Learner.Api` (ASP.NET Core minimal API, port 3001)
+- `frontend/` — React + TS, Vite, pnpm (port 3000). TanStack Query for server state, Zustand for client-only state.
+- `backend/` — `Learner.slnx`, `src/Learner.Api` (ASP.NET Core minimal API, port 3001, CORS origins in `appsettings.json`)
 
 ## Commands
 
