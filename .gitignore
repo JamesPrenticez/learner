@@ -12,3 +12,6 @@ appsettings.Production.json
 *.db
 *.db-shm
 *.db-wal
+
+# Uploaded media
+uploads/
