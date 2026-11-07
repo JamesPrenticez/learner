@@ -1,0 +1,14 @@
+bin/
+obj/
+node_modules/
+dist/
+.env
+*.user
+.vs/
+appsettings.Production.json
+.claude/settings.local.json
+
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal

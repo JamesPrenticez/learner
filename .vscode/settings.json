@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[csharp]": { "editor.defaultFormatter": "ms-dotnettools.csharp" },
+  "files.eol": "\n",
+  "files.exclude": { "**/bin": true, "**/obj": true },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/pnpm-lock.yaml": true
+  }
+}

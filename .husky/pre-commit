@@ -1,0 +1,5 @@
+set -e
+
+# Format staged files only (see "lint-staged" in package.json).
+# ponytail: no test gate yet, add the test commands once tests exist.
+pnpm exec lint-staged

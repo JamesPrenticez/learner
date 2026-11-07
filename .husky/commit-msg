@@ -1,0 +1,2 @@
+# Validates the commit message (rules in commitlint.config.js).
+pnpm exec commitlint --edit "$1"
