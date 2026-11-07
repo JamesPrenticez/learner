@@ -3,7 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "dev:fe": "pnpm --dir frontend dev",
+    "dev:be": "dotnet run --project backend/src/Learner.Api",
+    "dev": "concurrently -n fe,be -c cyan,magenta \"pnpm:dev:fe\" \"pnpm:dev:be\""
   },
   "lint-staged": {
     "*.{json,jsonc,css,md,yml,yaml,html}": [
@@ -13,6 +16,7 @@
   "devDependencies": {
     "@commitlint/cli": "^21.2.4",
     "@commitlint/config-conventional": "^21.2.4",
+    "concurrently": "^10.0.6",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "prettier": "^3.9.10"

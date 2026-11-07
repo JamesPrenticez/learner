@@ -25,10 +25,13 @@ The user is learning by building. The spec lives in `.docs/BUILD-PLAN.md`. Follo
 
 ## Layout
 
-TODO: fill in once `.docs/BUILD-PLAN.md` lands. Planned top-level folders: `frontend/`, `backend/`.
+- `frontend/` — React + TS, Vite, pnpm (port 3000)
+- `backend/` — `Learner.slnx`, `src/Learner.Api` (ASP.NET Core minimal API, port 3001)
 
 ## Commands
 
-TODO: fill in once the stack is scaffolded.
-
+- API: `dotnet run --project backend/src/Learner.Api`
+- Backend build/test: `dotnet build backend` / `dotnet test backend`
+- Frontend: `pnpm --dir frontend dev` / `pnpm --dir frontend build` / `pnpm --dir frontend lint`
+- Both: `pnpm dev` from the repo root
 - Prefer `rtk <cmd>` for token-efficient output (see global RTK.md).

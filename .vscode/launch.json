@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "API (debug)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "api: build",
+      "program": "${workspaceFolder}/backend/src/Learner.Api/bin/Debug/net10.0/Learner.Api.dll",
+      "cwd": "${workspaceFolder}/backend/src/Learner.Api",
+      "env": { "ASPNETCORE_ENVIRONMENT": "Development" }
+    }
+  ]
+}
